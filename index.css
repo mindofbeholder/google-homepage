@@ -8,8 +8,11 @@
         ". search-bar search-bar ."
         ". button-search button-lucky ."
         " bot-left-nav . . bot-right-nav";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr) 30px repeat(2, 1fr);
 }
 
+.container,
 .top-left-nav,
 .top-right-nav,
 .logo,
@@ -35,18 +38,28 @@
 
 .logo {
     grid-area: logo;
+    justify-self: center;
+    align-self: end;
 }
 
 .search-bar {
     grid-area: search-bar;
+    justify-self: center;
+}
+
+.search-bar input {
+    width: 400px;
+    height: 20px;
 }
 
 .button-search {
     grid-area: button-search;
+    justify-self: right;
 }
 
 .button-lucky {
     grid-area: button-lucky;
+    justify-self: left;
 }
 
 .bot-left-nav {
