@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    height: 900px;
+    width: 900px;
+    grid-template-areas: 
+        "top-left-nav . . top-right-nav"
+        ". logo logo ."
+        ". search-bar search-bar ."
+        ". button-search button-lucky ."
+        " bot-left-nav . . bot-right-nav";
+}
+
+.top-left-nav {
+    grid-area: top-left-nav;
+}
+
+.top-right-nav {
+    grid-area: top-right-nav;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.search-bar {
+    grid-area: search-bar;
+}
+
+.button-search {
+    grid-area: button-search;
+}
+
+.button-lucky {
+    grid-area: button-lucky;
+}
+
+.bot-left-nav {
+    grid-area: bot-left-nav;
+}
+
+.bot-right-nav {
+    grid-area: bot-right-nav;
+}
