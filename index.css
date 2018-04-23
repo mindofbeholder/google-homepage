@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    height: auto;
+    height: 98vh;
     width: auto;
     grid-template-areas: 
         "top-left-nav . . top-right-nav"
